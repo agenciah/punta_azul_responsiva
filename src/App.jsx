@@ -2,7 +2,7 @@ import 'antd/dist/reset.css'; // Estilos de Ant Design
 import NewResidentForm from './components/newResidentForm';
 import './App.css'; // Archivo CSS para el estilo personalizado
 import residenza_logo from "./assets/Residenza_logo.jpg";
-import xiris_logo from "./assets/logo_xiris ac.png";
+import xiris_logo from "./assets/punta_azul_logo.jpeg";
 
 function App() {
   return (

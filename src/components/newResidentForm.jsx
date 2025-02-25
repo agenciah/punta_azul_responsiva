@@ -6,8 +6,8 @@ import SignatureCanvas from 'react-signature-canvas';
 import jsPDF from 'jspdf';
 import CropImage from './crop/cropimage';
 import responsiva from '../assets/Responsiva_nuevos_Residentes.jpg';
-import fakeReglamento from './documents/Reglamento Falso.pdf';
-import fakeDirectorio from './documents/Directorio Falso.pdf';
+import fakeReglamento from './documents/reglamento_alojamientos_temporales.pdf';
+import fakeDirectorio from './documents/reglamento_amenidades_administrativo.pdf';
 import { saveAs } from 'file-saver';
 import TermsCheckbox from './termsCheckbox';
 
@@ -68,8 +68,8 @@ const NewResidentForm = () => {
     generatePDF(); // Genera y descarga el PDF del formulario
 
     // Descarga los documentos adicionales
-    saveAs(fakeReglamento, 'Reglamento.pdf');
-    saveAs(fakeDirectorio, 'Directorio.pdf');
+    saveAs(fakeReglamento, 'Reglamento_alojamientos_temporales_Punta_Azul.pdf');
+    saveAs(fakeDirectorio, 'Reglamento_administrativo_amenidades_Punta_Azul.pdf');
 
     form.resetFields(); // Limpia todos los campos del formulario
     setFileList([]); // Limpia la lista de archivos
